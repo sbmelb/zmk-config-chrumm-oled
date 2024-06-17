@@ -1,0 +1,2 @@
+config SHIELD_CHRUMM
+    def_bool $(shields_list_contains,chrumm)
