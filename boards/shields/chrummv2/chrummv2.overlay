@@ -1,4 +1,5 @@
 #include "chrummv2.dtsi"
+#include "config/layers.dtsi"
 
 / {
  kscan: kscan {
