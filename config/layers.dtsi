@@ -1,0 +1,15 @@
+/* windows */
+#define colemak_layer  0
+#define numpad_layer  1
+#define function_layer  2
+#define bt_layer  3
+#define F_brackets_layer  4
+#define F_bspacing-layer  5
+
+/* Helpers */
+#define F_colemak_layer  LS(F14)
+#define F_numpad_layer  LS(F15)
+#define F_function_layer  LS(F16)
+#define F_bt_layer  LS(F17)
+#define F_brackets_layer  LS(F18)
+#define F_spacing-layer  LS(F19)
