@@ -7,9 +7,9 @@
 #define F_bspacing-layer  5
 
 /* Helpers */
-#define F_colemak_layer  LS(F14)
-#define F_numpad_layer  LS(F15)
+#define F_colemak_layer   LS(F14)
+#define F_numpad_layer    LS(F15)
 #define F_function_layer  LS(F16)
-#define F_bt_layer  LS(F17)
+#define F_bt_layer        LS(F17)
 #define F_brackets_layer  LS(F18)
-#define F_spacing-layer  LS(F19)
+#define F_spacing-layer   LS(F19)
