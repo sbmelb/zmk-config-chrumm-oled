@@ -189,14 +189,14 @@
     };
 
     macros {
-        s_dot: ss {
+        s_dot: s_dot {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&none &kp S &kp SPACE>;
             label = "SS";
         };
 
-        ss_dot: s_dot {
+        ss_dot: ss_dot {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&none &kp S &kp S &kp SPACE>;
@@ -582,6 +582,24 @@
             bindings = <&none &kp LEFT_PARENTHESIS &kp A &kp A &kp RIGHT_PARENTHESIS>;
             label = "BKT_AA";
         };
+
+        mo_2_enun: mo_2_enun {
+            compatible = "zmk,behavior-macro";
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings
+                = <&macro_press &mo 2>
+                , <&macro_tap &LEFT_SHIFT (F15)>
+                , <&macro_pause_for_release>
+                , <&macro_release &mo 2>;
+            label = "MO_2_ENUN";
+        };
+
+
+
+
+
+
     };
 
     combos {
@@ -775,11 +793,11 @@
             // |  LCTR | LALT | MO 1 | SPACE| ENTER|      | ENTER | SPACE | BSPC | MO 3 | LEFT  | DOWN  |  RIGHT|
 
             bindings = <
-&kp ESCAPE      &kp N1                 &kp N2  &kp N3  &kp N4  &kp N5  &kp N6     &kp N7                               &kp N8     &kp N9   &kp N0                       &kp DELETE      &kp BACKSPACE
-&kp TAB         &kp Q                  &kp W   &kp F   &kp P   &kp B   &kp J      &kp L                                &kp U      &kp Y    &dt_dash_underscore          &dt_l_brackets  &dt_r_brackets
-&mo 2           &hold_1_kp_kp LSHFT A  &kp R   &kp S   &kp T   &kp G   &kp M      &kp N                                &kp E      &kp I    &hold_1_kp_kp RIGHT_SHIFT O  &dt_quotes      &dt_semi_full_colon
-&dt_shift_caps  &kp Z                  &kp X   &kp C   &kp D   &kp V   &kp K      &kp H                                &kp COMMA  &kp DOT  &kp FSLH                     &kp UP          &dt_shift_caps
-&kp LCTRL       &kp LALT               &kp A   &none   &mo 1           &kp ENTER  &hold_space_shift RIGHT_SHIFT SPACE  &mo 4      &mo 3    &kp LEFT                     &kp DOWN        &kp RIGHT
+&kp ESCAPE      &kp N1                 &kp N2      &kp N3  &kp N4  &kp N5  &kp N6     &kp N7                               &kp N8     &kp N9   &kp N0                       &kp DELETE      &kp BACKSPACE
+&kp TAB         &kp Q                  &kp W       &kp F   &kp P   &kp B   &kp J      &kp L                                &kp U      &kp Y    &dt_dash_underscore          &dt_l_brackets  &dt_r_brackets
+&mo 2           &hold_1_kp_kp LSHFT A  &kp R       &kp S   &kp T   &kp G   &kp M      &kp N                                &kp E      &kp I    &hold_1_kp_kp RIGHT_SHIFT O  &dt_quotes      &dt_semi_full_colon
+&dt_shift_caps  &kp Z                  &kp X       &kp C   &kp D   &kp V   &kp K      &kp H                                &kp COMMA  &kp DOT  &kp FSLH                     &kp UP          &dt_shift_caps
+&kp LCTRL       &kp LALT               mo_2_enun   &none   &mo 1           &kp ENTER  &hold_space_shift RIGHT_SHIFT SPACE  &mo 4      &mo 3    &kp LEFT                     &kp DOWN        &kp RIGHT
             >;
 
             sensor-bindings = <&rot_kp LEFT RIGHT>;
