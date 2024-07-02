@@ -590,14 +590,11 @@
             tap-ms = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LS(F15)>,
-                <&macro_release>,
-                <&kp LS(F15)>,
-                <&macro_press>,
                 <&mo 1>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&mo 1>;
+                <&mo 1>,
+                <&macro_tap>;
 
             label = "MO_1_ENUN";
         };
