@@ -589,7 +589,7 @@
             tap-ms = <0>;
             bindings
                 = <&macro_press &mo 2>
-                , <&macro_tap &LEFT_SHIFT (F15)>
+                , <&macro_tap &LEFT_SHIFT ("F15")>
                 , <&macro_pause_for_release>
                 , <&macro_release &mo 2>;
             label = "MO_2_ENUN";
