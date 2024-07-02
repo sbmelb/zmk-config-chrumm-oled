@@ -585,6 +585,7 @@
 
         mo_2_enun: mo_2_enun {
             compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
             bindings
