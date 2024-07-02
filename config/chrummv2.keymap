@@ -649,7 +649,7 @@
                 <&mo 4>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&kp LG(F18) &mo 4>,
+                <&kp LG(F16) &mo 4>,
                 <&macro_tap>;
 
             label = "MO_4_ENUN";
