@@ -698,48 +698,48 @@
 
         chord_colon {
             bindings = <&kp COLON>;
-            key-positions = <19 20>;
+            key-positions = <>;
             timeout-ms = <30>;
             layers = <0>;
         };
 
         chord_dash {
             bindings = <&kp MINUS>;
-            key-positions = <32 33>;
+            key-positions = <>;
             timeout-ms = <30>;
             layers = <0>;
         };
 
         chord_quote {
             bindings = <&kp SINGLE_QUOTE>;
-            key-positions = <45 46>;
+            key-positions = <>;
             timeout-ms = <30>;
             layers = <0>;
         };
 
         chord_equals {
             bindings = <&kp EQUAL>;
-            key-positions = <33 34>;
+            key-positions = <>;
             timeout-ms = <30>;
             layers = <0>;
         };
 
         chord_plus {
             bindings = <&kp PLUS>;
-            key-positions = <11 12>;
+            key-positions = <>;
             layers = <0>;
         };
 
         chord_forwardslash {
             bindings = <&kp FSLH>;
-            key-positions = <10 11>;
+            key-positions = <>;
             timeout-ms = <30>;
             layers = <0>;
         };
 
         chord_asterisk {
             bindings = <&kp ASTERISK>;
-            key-positions = <8 9>;
+            key-positions = <>;
             timeout-ms = <30>;
             layers = <0>;
         };
@@ -753,42 +753,42 @@
 
         chord_leftbracket {
             bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <20 21>;
+            key-positions = <>;
             timeout-ms = <50>;
             layers = <0>;
         };
 
         chord_rightbracket {
             bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <21 22>;
+            key-positions = <>;
             timeout-ms = <50>;
             layers = <0>;
         };
 
         chord_underscore {
             bindings = <&kp UNDER>;
-            key-positions = <9 10>;
+            key-positions = <>;
             timeout-ms = <30>;
             layers = <0>;
         };
 
         chord_doublequotes {
             bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <46 47>;
+            key-positions = <>;
             timeout-ms = <30>;
             layers = <0>;
         };
 
         chord_dash2 {
             bindings = <&kp MINUS>;
-            key-positions = <23 24>;
+            key-positions = <>;
             timeout-ms = <30>;
             layers = <0>;
         };
 
         chord_forwardslash2 {
             bindings = <&kp SLASH>;
-            key-positions = <49 50>;
+            key-positions = <>;
             timeout-ms = <30>;
         };
 
@@ -850,14 +850,14 @@
 
         chord_euro {
             bindings = <&euro>;
-            key-positions = <35 34>;
+            key-positions = <>;
             timeout-ms = <30>;
             layers = <0>;
         };
 
         chord_gbp {
             bindings = <&gbp>;
-            key-positions = <47 48>;
+            key-positions = <>;
             timeout-ms = <30>;
             layers = <0>;
         };
