@@ -972,11 +972,11 @@
         spacing-layer {
             display-name = "spacing_layer";
             bindings = <
-&trans  &kp LC(F13)  &none   &kp LC(F14)  &none   &none   &kp LC(F15)  &none   &kp LC(F16)  &trans  &trans       &trans  &kp LC(F17)
-&trans  &trans       &trans  &trans       &trans  &trans  &trans       &trans  &kp LC(F18)  &trans  &trans       &trans  &kp LC(F19)
-&trans  &trans       &trans  &trans       &trans  &trans  &trans       &trans  &trans       &trans  &trans       &trans  &trans
-&trans  &trans       &trans  &trans       &trans  &trans  &trans       &trans  &trans       &trans  &trans       &trans  &trans
-&trans  &trans       &trans  &trans       &trans          &trans       &trans  &trans       &trans  &kp LC(F23)  &trans  &kp LC(F24)
+&trans  &kp LC(F13)  &none   &kp LC(F14)  &none   &none   &kp LC(F15)  &none   &kp LC(F16)  &trans  &trans  &trans  &kp LC(F17)
+&trans  &trans       &trans  &trans       &trans  &trans  &trans       &trans  &kp LC(F18)  &trans  &trans  &trans  &kp LC(F19)
+&trans  &trans       &trans  &trans       &trans  &trans  &trans       &trans  &trans       &trans  &trans  &trans  &trans
+&trans  &trans       &trans  &trans       &trans  &trans  &trans       &trans  &trans       &trans  &trans  &trans  &trans
+&trans  &trans       &trans  &trans       &trans          &trans       &trans  &trans       &trans  &trans  &trans  &trans
             >;
         };
     };
