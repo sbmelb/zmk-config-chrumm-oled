@@ -739,7 +739,7 @@
 
         chord_asterisk {
             bindings = <&kp ASTERISK>;
-            key-positions = <>;
+            key-positions = <8 9>;
             timeout-ms = <30>;
             layers = <0>;
         };
