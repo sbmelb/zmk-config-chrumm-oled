@@ -864,7 +864,7 @@
 
         chord_back_slash {
             bindings = <&kp BACKSLASH>;
-            key-positions = <48 49>;
+            key-positions = <>;
             timeout-ms = <30>;
             layers = <0>;
         };
