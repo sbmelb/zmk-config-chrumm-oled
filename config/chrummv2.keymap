@@ -726,7 +726,7 @@
 
         chord_plus {
             bindings = <&kp PLUS>;
-            key-positions = <>;
+            key-positions = <11 12>;
             layers = <0>;
         };
 
