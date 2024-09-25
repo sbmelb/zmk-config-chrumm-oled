@@ -719,7 +719,7 @@
 
         chord_equals {
             bindings = <&kp EQUAL>;
-            key-positions = <>;
+            key-positions = <63 62>;
             timeout-ms = <30>;
             layers = <0>;
         };
