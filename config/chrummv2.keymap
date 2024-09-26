@@ -754,14 +754,14 @@
         chord_leftbracket {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <9 10>;
-            timeout-ms = <50>;
+            timeout-ms = <30>;
             layers = <0>;
         };
 
         chord_rightbracket {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <10 11>;
-            timeout-ms = <50>;
+            timeout-ms = <30>;
             layers = <0>;
         };
 
