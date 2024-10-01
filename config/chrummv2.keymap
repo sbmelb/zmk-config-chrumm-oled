@@ -913,7 +913,7 @@
 &trans  &trans  &trans  &trans  &trans          &trans    &trans     &trans        &trans     &kp N0        &kp PERIOD    &kp EQUAL
             >;
 
-            sensor-bindings = <&rot_kp LEFT_ARROW RIGHT>;
+            sensor-bindings = <&rot_kp LEFT RIGHT>;
         };
 
         function_layer {
