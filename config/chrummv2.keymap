@@ -934,7 +934,7 @@
 &kp LEFT_GUI  &trans   &trans   &trans   &trans            &trans   &trans   &trans   &trans   &kp K_VOLUME_DOWN  &kp C_VOL_DN  &kp LC(K_VOLUME_UP)
             >;
 
-            sensor-bindings = <&rot_kp LA(LC(C_VOLUME_DOWN)) LA(LC(C_VOLUME_UP))>;
+            sensor-bindings = <&rot_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         bt_layer {
