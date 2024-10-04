@@ -934,7 +934,7 @@
 &kp LEFT_GUI  &trans   &trans   &trans   &trans            &trans   &trans   &trans   &trans   &kp K_VOLUME_DOWN  &kp C_VOL_DN  &kp LC(K_VOLUME_UP)
             >;
 
-            sensor-bindings = <&rot_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&rot_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         bt_layer {
@@ -965,8 +965,6 @@
 &trans  &trans            &trans  &td_bkt_c_bkt_cth  &bkt_d  &dt_bkt_v_bkt_vic  &bkt_k  &bkt_h  &trans  &trans        &trans       &trans   &trans
 &trans  &trans            &trans  &trans             &trans                     &trans  &trans  &trans  &trans        &kp LC(F23)  &trans   &kp LC(F24)
             >;
-
-            sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
         };
 
         spacing-layer {
