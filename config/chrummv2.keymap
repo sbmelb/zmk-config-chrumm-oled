@@ -945,10 +945,10 @@
             // |       |      |      |      |      |      |       |       |      |      |       |       |       |
 
             bindings = <
-&trans        &kp F1             &kp F2   &kp F3   &kp F4   &kp F5   &kp F6   &kp F7   &kp F8   &kp F9   &kp F10            &kp F11       &kp F12
+&kp TILDE     &kp F1             &kp F2   &kp F3   &kp F4   &kp F5   &kp F6   &kp F7   &kp F8   &kp F9   &kp F10            &kp F11       &kp F12
 &trans        &kp F13            &kp F14  &kp F15  &kp F16  &kp F17  &kp F18  &kp F19  &kp F20  &kp F21  &kp F22            &kp F23       &kp F24
 &trans        &kp LG(LS(COMMA))  &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans             &trans        &trans
-&trans        &kp LG(Z)          &trans   &clr     &trans   &trans   &trans   &trans   &trans   &trans   &trans             &kp C_VOL_UP  &trans
+&trans        &kp LG(Z)          &trans   &clr     &trans   &trans   &trans   &trans   &trans   &trans   &kp BACKSLASH      &kp C_VOL_UP  &trans
 &kp LEFT_GUI  &trans             &trans   &trans   &trans            &trans   &trans   &trans   &trans   &kp LG(LESS_THAN)  &kp C_VOL_DN  &kp LG(GREATER_THAN)
             >;
 
