@@ -1017,7 +1017,7 @@
         Hotkey_layer {
             bindings = <
 &trans        &trans             &trans  &trans  &trans  &trans  &trans             &trans             &trans  &trans  &trans         &trans  &trans
-&trans        &trans             &trans  &trans  &trans  &trans  &trans             &kp LG(LC(LA(L)))  &trans  &trans  &trans         &trans  &trans
+&kp SPACE     &trans             &trans  &trans  &trans  &trans  &trans             &kp LG(LC(LA(L)))  &trans  &trans  &trans         &trans  &trans
 &trans        &kp LG(LS(COMMA))  &trans  &trans  &trans  &trans  &kp LG(LC(LA(M)))  &trans             &trans  &trans  &trans         &trans  &trans
 &trans        &kp LG(Z)          &trans  &trans  &trans  &trans  &trans             &kp LG(H)          &trans  &trans  &kp BACKSLASH  &trans  &trans
 &kp LEFT_GUI  &trans             &trans  &trans  &trans          &trans             &trans             &trans  &trans  &trans         &trans  &trans
