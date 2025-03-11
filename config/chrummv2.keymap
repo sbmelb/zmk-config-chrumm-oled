@@ -1006,11 +1006,11 @@
         spacing-layer {
             display-name = "spacing_layer";
             bindings = <
-&trans  &kp LC(F13)  &none   &kp LC(F14)  &none   &none   &kp LC(F15)  &none   &kp LC(F16)  &trans  &trans  &trans       &kp LC(F17)
-&trans  &trans       &trans  &trans       &trans  &trans  &trans       &trans  &trans       &trans  &trans  &kp LC(F18)  &kp LC(F19)
-&trans  &trans       &trans  &trans       &trans  &trans  &trans       &trans  &trans       &trans  &trans  &trans       &trans
-&trans  &trans       &trans  &trans       &trans  &trans  &trans       &trans  &trans       &trans  &trans  &trans       &trans
-&trans  &trans       &trans  &trans       &trans          &trans       &trans  &trans       &trans  &trans  &trans       &trans
+&trans  &kp LC(F13)  &none   &kp LC(F14)  &none   &none   &kp LC(F15)  &none   &kp LC(F16)  &trans  &trans       &trans       &kp LC(F17)
+&trans  &trans       &trans  &trans       &trans  &trans  &trans       &trans  &trans       &trans  &trans       &kp LC(F18)  &kp LC(F19)
+&trans  &trans       &trans  &trans       &trans  &trans  &trans       &trans  &trans       &trans  &trans       &trans       &trans
+&trans  &trans       &trans  &trans       &trans  &trans  &trans       &trans  &trans       &trans  &trans       &trans       &trans
+&trans  &trans       &trans  &trans       &trans          &trans       &trans  &trans       &trans  &kp LC(F23)  &trans       &kp LC(F24)
             >;
         };
 
@@ -1020,7 +1020,7 @@
 &kp SPACE     &trans             &trans  &trans  &trans  &trans  &trans             &kp LG(LC(LA(L)))  &trans  &trans  &trans         &trans  &trans
 &trans        &kp LG(LS(COMMA))  &trans  &trans  &trans  &trans  &kp LG(LC(LA(M)))  &trans             &trans  &trans  &trans         &trans  &trans
 &trans        &kp LG(Z)          &trans  &trans  &trans  &trans  &trans             &kp LG(H)          &trans  &trans  &kp BACKSLASH  &trans  &trans
-&kp LEFT_GUI  &trans             &trans  &trans  &trans          &trans             &trans             &trans  &trans  &trans         &trans  &trans
+&kp LEFT_GUI  &trans             &trans  &trans  &trans          &trans             &trans             &trans  &trans  &kp LC(F23)    &trans  &kp LC(F23)
             >;
         };
     };
