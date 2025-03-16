@@ -693,18 +693,19 @@
 
         unicode_emdash: unicode_emdash {
             compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;       
+            #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
             bindings =
-                <&macro_press   &kp LALT>,
-                <&macro_tap     &kp KP_N2 &kp KP_N0 &kp KP_N1 &kp KP_N4>,
-                <&macro_release &kp LALT>;
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N1 &kp KP_N5 &kp KP_N1>,
+                <&macro_release>,
+                <&kp LALT>;
 
             label = "UNICODE_EMDASH";
         };
-
-
 
         //   mo_2_enun: mo_2_enun {
         //       compatible = "zmk,behavior-macro";
