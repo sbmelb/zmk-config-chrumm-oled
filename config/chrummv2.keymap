@@ -691,7 +691,7 @@
             label = "MO_6_ENUN";
         };
 
-        unicode_emdash {
+        unicode_emdash: unicode_emdash {
         wait-ms = <40>;
         tap-ms = <40>;
         bindings =
