@@ -707,6 +707,168 @@
             label = "UNICODE_EMDASH";
         };
 
+        dash_list: dash_list {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(F18)>;
+            label = "DASH_LIST";
+        };
+
+        dot_list: dot_list {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(F19)>;
+            label = "DOT_LIST";
+        };
+
+        alpha_dash_list: alpha_dash_list {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(A)>;
+            label = "ALPHA_DASH_LIST";
+        };
+
+        num_dash_list: num_dash_list {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(Y)>;
+            label = "NUM_DASH_LIST";
+        };
+
+        statute_list: statute_list {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(S)>;
+            label = "STATUTE_LIST";
+        };
+
+        statute_list_2: statute_list_2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(R)>;
+            label = "STATUTE_LIST_2";
+        };
+
+        list_A_1_i: list_A_1_i {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LC(A))>;
+            label = "LIST_A_1_I";
+        };
+
+        clear_formatting: clear_formatting {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(S)>;
+            label = "CLEAR_FORMATTING";
+        };
+
+        safe_paste: safe_paste {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LA(T))>;
+            label = "SAFE_PASTE";
+        };
+
+        indent_left: indent_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(F23)>;
+            label = "INDENT_LEFT";
+        };
+
+        indent_right: indent_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(F24)>;
+            label = "INDENT_RIGHT";
+        };
+
+        quotes: quotes {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LA(W))>;
+            label = "QUOTES";
+        };
+
+        square_brackets: square_brackets {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LA(LEFT_BRACKET))>;
+            label = "SQUARE_BRACKETS";
+        };
+
+        brackets: brackets {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LA(N9))>;
+            label = "BRACKETS";
+        };
+
+        caps: caps {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(F3)>;
+            label = "CAPS";
+        };
+
+        underline: underline {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(U)>;
+            label = "UNDERLINE";
+        };
+
+        bold: bold {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(B)>;
+            label = "BOLD";
+        };
+
+        italic: italic {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(I)>;
+            label = "ITALIC";
+        };
+
+        highlight: highlight {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LA(H))>;
+            label = "HIGHLIGHT";
+        };
+
+        key_point: key_point {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LC(I))>;
+            label = "KEY_POINT";
+        };
+
+        euro: euro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_8 &kp KP_NUMBER_3 &kp KP_NUMBER_6 &kp KP_NUMBER_4>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "EURO";
+        };
+
+        fix_paras_in_copied_text: fix_paras_in_copied_text {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp DELETE>;
+            label = "FIX_PARAS_IN_COPIED_TEXT";
+        };
+
+
         //   mo_2_enun: mo_2_enun {
         //       compatible = "zmk,behavior-macro";
         //      #binding-cells = <0>;
