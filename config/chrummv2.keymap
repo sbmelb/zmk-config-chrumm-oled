@@ -1036,7 +1036,7 @@
 &trans        &trans             &trans  &trans  &trans  &trans  &trans             &kp LG(LC(LA(L)))  &trans  &trans  &unicode_emdash  &trans  &trans
 &trans        &kp LG(LS(COMMA))  &trans  &trans  &trans  &trans  &kp LG(LC(LA(M)))  &trans             &trans  &trans  &trans           &trans  &trans
 &trans        &kp LG(Z)          &trans  &trans  &trans  &trans  &trans             &kp LG(H)          &trans  &trans  &kp BACKSLASH    &trans  &trans
-&kp LEFT_GUI  &trans             &trans  &trans  &trans          &trans             &trans             &trans  &trans  &trans           &trans  &trans
+&kp LEFT_GUI  &trans             &trans  &trans  &trans          &trans             &trans             &trans  &trans  &kp LC(F23)      &trans  &kp LC(F24)
             >;
         };
     };
