@@ -853,7 +853,6 @@
             label = "FIX_PARAS_IN_COPIED_TEXT";
         };
 
-
         //   mo_2_enun: mo_2_enun {
         //       compatible = "zmk,behavior-macro";
         //      #binding-cells = <0>;
@@ -1181,8 +1180,8 @@
             bindings = <
 &trans        &trans             &trans  &trans  &trans  &trans  &trans             &trans             &trans  &trans  &trans           &trans  &trans
 &trans        &trans             &trans  &trans  &trans  &trans  &trans             &kp LG(LC(LA(L)))  &trans  &trans  &unicode_emdash  &trans  &trans
-&trans        &kp LG(LS(COMMA))  &trans  &trans  &trans  &trans  &kp LG(LC(LA(M)))  &trans             &trans  &trans  &trans           &trans  &trans
-&trans        &kp LG(Z)          &trans  &trans  &trans  &trans  &trans             &kp LG(H)          &trans  &trans  &kp BACKSLASH    &trans  &trans
+&trans        &kp LG(LS(COMMA))  &trans  &trans  &trans  &trans  &kp LG(LC(LA(M)))  &trans             &trans  &trans  &trans           &trans  &dot_list
+&trans        &kp LG(Z)          &trans  &trans  &trans  &trans  &trans             &kp LG(H)          &trans  &trans  &kp BACKSLASH    &trans  &num_dash_list
 &kp LEFT_GUI  &trans             &trans  &trans  &trans          &trans             &trans             &trans  &trans  &kp LC(F23)      &trans  &kp LC(F24)
             >;
         };
