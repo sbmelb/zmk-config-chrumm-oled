@@ -504,7 +504,6 @@
             label = "BKT_V";
         };
 
-
         clr: clr {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -843,6 +842,7 @@
                 <&kp KP_NUMBER_8 &kp KP_NUMBER_3 &kp KP_NUMBER_6 &kp KP_NUMBER_4>,
                 <&macro_release>,
                 <&kp LEFT_ALT>;
+
             label = "EURO";
         };
 
@@ -1178,11 +1178,11 @@
 
         Hotkey_layer {
             bindings = <
-&trans        &trans             &trans  &trans  &trans  &trans  &trans             &trans             &trans  &trans  &trans           &trans  &trans
-&trans        &trans             &trans  &trans  &trans  &trans  &trans             &kp LG(LC(LA(L)))  &trans  &trans  &unicode_emdash  &trans  &trans
-&trans        &kp LG(LS(COMMA))  &trans  &trans  &trans  &trans  &kp LG(LC(LA(M)))  &trans             &trans  &trans  &trans           &trans  &dot_list
-&trans        &kp LG(Z)          &trans  &trans  &trans  &trans  &trans             &kp LG(H)          &trans  &trans  &kp BACKSLASH    &trans  &num_dash_list
-&kp LEFT_GUI  &trans             &trans  &trans  &trans          &trans             &trans             &trans  &trans  &kp LC(F23)      &trans  &kp LC(F24)
+&trans                     &trans             &trans  &trans  &trans  &trans  &trans             &trans             &trans  &trans  &trans           &trans  &trans
+&fix_paras_in_copied_text  &trans             &trans  &trans  &trans  &trans  &trans             &kp LG(LC(LA(L)))  &trans  &trans  &unicode_emdash  &trans  &trans
+&trans                     &kp LG(LS(COMMA))  &trans  &trans  &trans  &trans  &kp LG(LC(LA(M)))  &trans             &trans  &trans  &trans           &trans  &dot_list
+&trans                     &kp LG(Z)          &trans  &trans  &trans  &trans  &trans             &kp LG(H)          &trans  &trans  &kp BACKSLASH    &trans  &num_dash_list
+&kp LEFT_GUI               &trans             &trans  &trans  &trans          &trans             &trans             &trans  &trans  &kp LC(F23)      &trans  &kp LC(F24)
             >;
         };
     };
