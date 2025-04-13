@@ -1178,7 +1178,7 @@
 
         Hotkey_layer {
             bindings = <
-&trans                     &trans             &trans  &trans  &trans  &trans  &trans             &trans             &trans  &trans  &trans           &trans  &trans
+&kp TILDE                  &trans             &trans  &trans  &trans  &trans  &trans             &trans             &trans  &trans  &trans           &trans  &trans
 &fix_paras_in_copied_text  &trans             &trans  &trans  &trans  &trans  &trans             &kp LG(LC(LA(L)))  &trans  &trans  &unicode_emdash  &trans  &trans
 &trans                     &kp LG(LS(COMMA))  &trans  &trans  &trans  &trans  &kp LG(LC(LA(M)))  &trans             &trans  &trans  &trans           &trans  &dot_list
 &trans                     &kp LG(Z)          &trans  &trans  &trans  &trans  &trans             &kp LG(H)          &trans  &trans  &kp BACKSLASH    &trans  &num_dash_list
