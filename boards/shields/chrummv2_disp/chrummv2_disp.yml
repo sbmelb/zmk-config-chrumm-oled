@@ -1,7 +1,7 @@
 
 file_format: "1"
-id: chrummv2
-name: chrummv2
+id: chrummv2_disp
+name: chrummv2_disp
 type: shield
 url: 
 requires: [nice_nano_v2]
@@ -9,7 +9,4 @@ requires: [nice_nano_v2]
 features:
   - keys
   - encoder
-#siblings:
- # - zodiark_left
- # - zodiark_right
 

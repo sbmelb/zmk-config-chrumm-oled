@@ -1,6 +1,6 @@
 if SHIELD_CHRUMMV2
 
 config ZMK_KEYBOARD_NAME
-    default "Chrummv2"
+    default "chrummv2_disp"
 
 endif
