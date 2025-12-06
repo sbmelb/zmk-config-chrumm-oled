@@ -1,7 +1,7 @@
 
 file_format: "1"
-id: chrummv2_disp
-name: chrummv2_disp
+id: chrummv2
+name: chrummv2
 type: shield
 url: 
 requires: [nice_nano_v2]

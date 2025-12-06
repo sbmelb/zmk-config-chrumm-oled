@@ -1,2 +1,0 @@
-config SHIELD_CHRUMMV2
-    def_bool $(shields_list_contains,chrummv2_disp)

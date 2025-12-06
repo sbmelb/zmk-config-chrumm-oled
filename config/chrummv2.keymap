@@ -1079,14 +1079,15 @@
             // |  TAB  |  Q   |  W   |  F   |  P   |  B   |   J   |  L    |  U   |  Y   |   ;   | LBKT  |  RBKT |
             // |  MO 2 |  A   |  R   |  S   |  T   |  G   |   M   |  N    |  E   |  I   |   O   |  '    |  NUBS |
             // |  TD 0 |  Z   |  X   |  C   |  D   |  V   |   K   |  H    |  ,   |  .   |   /   |  UP   |  RSFT |
-            // |  LCTR | LALT | MO 1 | SPACE| ENTER|      | ENTER | SPACE | BSPC | MO 3 | LEFT  | DOWN  |  RIGHT|
+            // |  LCTR | EC11 | LALT | MO 1 | SPACE| ENTER| ENTER | SPACE | BSPC | MO 3 | LEFT  | DOWN  |  RIGHT|
+            //            ** note - EC11 is the button in the ecll encoder
 
             bindings = <
-&kp ESCAPE      &kp N1    &kp N2      &kp N3      &kp N4     &kp N5  &kp N6                               &kp N7      &kp N8      &kp N9      &kp N0               &kp DELETE      &kp BACKSPACE
-&kp TAB         &kp Q     &kp W       &kp F       &kp P      &kp B   &kp J                                &kp L       &kp U       &kp Y       &dt_dash_underscore  &dt_l_brackets  &dt_r_brackets
-&mo_2_enun      &kp A     &kp R       &kp S       &kp T      &kp G   &kp M                                &kp N       &kp E       &kp I       &kp O                &dt_quotes      &dt_semi_full_colon
-&dt_shift_caps  &kp Z     &kp X       &kp C       &kp D      &kp V   &kp K                                &kp H       &kp COMMA   &kp DOT     &kp FSLH             &kp UP          &kp RIGHT_SHIFT
-&kp LCTRL       &kp LALT  &mo_6_enun  &mo_1_enun  &kp ENTER          &hold_space_shift RIGHT_SHIFT SPACE  &mo_5_enun  &mo_4_enun  &mo_3_enun  &kp LEFT             &kp DOWN        &kp RIGHT
+&kp ESCAPE      &kp N1    &kp N2      &kp N3      &kp N4     &kp N5                       &kp N6                               &kp N7      &kp N8      &kp N9      &kp N0               &kp DELETE      &kp BACKSPACE
+&kp TAB         &kp Q     &kp W       &kp F       &kp P      &kp B                        &kp J                                &kp L       &kp U       &kp Y       &dt_dash_underscore  &dt_l_brackets  &dt_r_brackets
+&mo_2_enun      &kp A     &kp R       &kp S       &kp T      &kp G                        &kp M                                &kp N       &kp E       &kp I       &kp O                &dt_quotes      &dt_semi_full_colon
+&dt_shift_caps  &kp Z     &kp X       &kp C       &kp D      &kp V                        &kp K                                &kp H       &kp COMMA   &kp DOT     &kp FSLH             &kp UP          &kp RIGHT_SHIFT
+&kp LCTRL       &trans    &kp LALT    &mo_6_enun  &mo_1_enun  &kp ENTER                   &hold_space_shift RIGHT_SHIFT SPACE  &mo_5_enun  &mo_4_enun  &mo_3_enun  &kp LEFT             &kp DOWN        &kp RIGHT
             >;
 
             sensor-bindings = <&rot_kp LEFT RIGHT>;
@@ -1108,7 +1109,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans        &trans     &kp NUMBER_7  &kp N8        &kp N9
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans        &trans     &kp NUMBER_4  &kp N5        &kp NUMBER_6
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans        &trans     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3
-&trans  &trans  &trans  &trans  &trans          &trans    &trans     &trans        &trans     &kp N0        &kp PERIOD    &kp EQUAL
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans        &trans     &kp N0        &kp PERIOD    &kp EQUAL
             >;
 
             sensor-bindings = <&rot_kp LEFT RIGHT>;
@@ -1129,7 +1130,7 @@
 &trans        &kp F13  &kp F14  &kp F15  &kp F16  &kp F17  &kp F18  &kp F19  &kp F20  &kp F21  &kp F22        &kp F23  &kp F24
 &trans        &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans         &trans   &trans
 &trans        &trans   &trans   &clr     &trans   &trans   &trans   &trans   &trans   &trans   &kp BACKSLASH  &trans   &trans
-&kp LEFT_GUI  &trans   &trans   &trans   &trans            &trans   &trans   &trans   &trans   &trans         &trans   &trans
+&kp LEFT_GUI  &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans         &trans   &trans
             >;
 
             sensor-bindings = <&rot_kp C_VOLUME_DOWN C_VOLUME_UP>;
@@ -1150,7 +1151,7 @@
 &bootloader  &trans        &trans        &trans        &trans        &trans        &out OUT_BLE  &out OUT_USB  &trans  &trans  &trans  &trans  &trans
 &sys_reset   &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans
 &trans       &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans
-&soft_off    &trans        &trans        &trans        &trans                      &trans        &trans        &trans  &trans  &trans  &trans  &trans
+&soft_off    &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -1161,7 +1162,7 @@
 &trans  &trans            &trans  &bkt_f             &bkt_p  &bkt_b             &bkt_j  &bkt_l  &trans  &trans        &trans       &trans   &trans
 &trans  &dt_bkt_a_bkt_aa  &trans  &dt_s_ss_dot       &trans  &bkt_g             &bkt_m  &bkt_n  &bkt_e  &td_i_ii_iii  &bkt_o       &trans   &trans
 &trans  &trans            &trans  &td_bkt_c_bkt_cth  &bkt_d  &dt_bkt_v_bkt_vic  &bkt_k  &bkt_h  &trans  &trans        &trans       &trans   &trans
-&trans  &trans            &trans  &trans             &trans                     &trans  &trans  &trans  &trans        &kp LC(F23)  &trans   &kp LC(F24)
+&trans  &trans            &trans  &trans             &trans  &trans             &trans  &trans  &trans  &trans        &kp LC(F23)  &trans   &kp LC(F24)
             >;
         };
 
@@ -1172,7 +1173,7 @@
 &trans  &trans       &trans  &trans       &trans  &trans  &trans       &trans  &trans       &trans  &trans       &kp LC(F18)  &kp LC(F19)
 &trans  &trans       &trans  &trans       &trans  &trans  &trans       &trans  &trans       &trans  &trans       &trans       &trans
 &trans  &trans       &trans  &trans       &trans  &trans  &trans       &trans  &trans       &trans  &trans       &trans       &trans
-&trans  &trans       &trans  &trans       &trans          &trans       &trans  &trans       &trans  &kp LC(F23)  &trans       &kp LC(F24)
+&trans  &trans       &trans  &trans       &trans  &trans  &trans       &trans  &trans       &trans  &kp LC(F23)  &trans       &kp LC(F24)
             >;
         };
 
@@ -1182,7 +1183,7 @@
 &fix_paras_in_copied_text  &trans                    &trans                    &trans                    &trans                    &trans                    &trans             &kp LG(LC(LA(L)))  &trans  &trans  &unicode_emdash  &trans  &trans
 &trans                     &kp LG(LS(COMMA))         &trans                    &trans                    &trans                    &trans                    &kp LG(LC(LA(M)))  &trans             &trans  &trans  &trans           &trans  &dot_list
 &trans                     &kp LG(Z)                 &trans                    &trans                    &trans                    &trans                    &trans             &kp LG(H)          &trans  &trans  &kp BACKSLASH    &trans  &num_dash_list
-&kp LEFT_GUI               &trans                    &trans                    &trans                    &trans                                              &kp PIPE           &trans             &trans  &trans  &kp LC(F23)      &trans  &kp LC(F24)
+&kp LEFT_GUI               &trans                    &trans                    &trans                    &trans                    &trans                    &kp PIPE           &trans             &trans  &trans  &kp LC(F23)      &trans  &kp LC(F24)
             >;
         };
     };

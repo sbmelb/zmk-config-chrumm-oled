@@ -1,0 +1,11 @@
+#include "chrummv2_disp.dtsi"
+
+
+//&left_encoder {
+//    status = "okay";
+//};
+
+
+
+
+
