@@ -1,9 +1,9 @@
 #include "chrummv2.dtsi"
 
 
-//&left_encoder {
-//    status = "okay";
-//};
+&left_encoder {
+    status = "okay";
+};
 
 
 
