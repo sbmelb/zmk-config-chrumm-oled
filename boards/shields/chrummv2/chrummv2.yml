@@ -4,7 +4,7 @@ id: chrummv2
 name: chrummv2
 type: shield
 url: 
-requires: [nice_nano_v2]
+requires: [nice_nano]
 #exposes: [i2c_oled]
 features:
   - keys
