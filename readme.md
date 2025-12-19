@@ -9,7 +9,7 @@ spi pins - for 74HC595 shift registers (software spi in local repository):
   SERIAL OUTPUT (MISO) → D0 / P0.08
   SRCLK→ D5 / P0.24
   RCLK (Latch) → D6 / P1.00
-  MISO (unused, but required) → D4 / P0.22
+  Mosi?? (unused, but required) → D4 / P0.22
 
 
 col-gpios = <&pro_micro 21 (GPIO_ACTIVE_HIGH)>, 
@@ -18,13 +18,13 @@ col-gpios = <&pro_micro 21 (GPIO_ACTIVE_HIGH)>,
                   <&pro_micro 18 (GPIO_ACTIVE_HIGH)>, 
                   <&pro_micro 15 (GPIO_ACTIVE_HIGH)>, 
                   <&pro_micro 14 (GPIO_ACTIVE_HIGH)>, 
-                  <&pro_micro 6 (GPIO_ACTIVE_HIGH)>, 
-                  <&pro_micro 5 (GPIO_ACTIVE_HIGH)>, 
-                  <&pro_micro 4 (GPIO_ACTIVE_HIGH)>, 
-                  <&pro_micro 3 (GPIO_ACTIVE_HIGH)>,  // * D3
-                  <&pro_micro 2 (GPIO_ACTIVE_HIGH)>,  // * D2
-                  <&pro_micro 0 (GPIO_ACTIVE_HIGH)>, 
-                  <&pro_micro 1 (GPIO_ACTIVE_HIGH)>; // * D1
+                  <&pro_micro 6 (GPIO_ACTIVE_HIGH)>,  ** shift register − RCLK (Latch)
+                  <&pro_micro 5 (GPIO_ACTIVE_HIGH)>,  ** shift register - SRCLK
+                  <&pro_micro 4 (GPIO_ACTIVE_HIGH)>,   ** must be empty
+                  <&pro_micro 3 (GPIO_ACTIVE_HIGH)>,   ** niceview sck
+                  <&pro_micro 2 (GPIO_ACTIVE_HIGH)>,  ** niceview mosi
+                  <&pro_micro 0 (GPIO_ACTIVE_HIGH)>, ** shift register - serial output (miso)
+                  <&pro_micro 1 (GPIO_ACTIVE_HIGH)>;  ** niceview CS
     };
 
 
