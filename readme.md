@@ -33,4 +33,44 @@ col-gpios = <&pro_micro 21 (GPIO_ACTIVE_HIGH)>,
         a-gpios = <&gpio1 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         b-gpios = <&gpio1 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         steps = <40>;
+
+
+
+
+ / {
+    spi_595_bus: spi_595_bus {
+        compatible = "zephyr,spi-bitbang";
+        status = "okay";
+
+        /* 595 wiring:
+         *   SERIAL OUTPUT (MISO) → D0
+         *   SRCLK→ D5
+         *   RCLK → D6 (latch)
+         *   MISO → D4 (unused, but required)
+         */
+        clk-gpios  = <&pro_micro 5 GPIO_ACTIVE_HIGH>;  /* D5: SHCP (shift clock) */
+        mosi-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>;  /* D0: SERIAL OUT */
+        miso-gpios = <&pro_micro 4 GPIO_ACTIVE_HIGH>;  /* unused, but required */
+
+        cs-gpios   = <&pro_micro 6 GPIO_ACTIVE_LOW>;   /* D6: STCP (latch clock) */
+
+        #address-cells = <1>;
+        #size-cells = <0>;
+
+        shifter: gpio_595@0 {
+            compatible = "zmk,gpio-595";
+            status = "okay";
+
+            reg = <0>;                  /* first entry in cs-gpios */
+            spi-max-frequency = <200000>;
+
+            gpio-controller;
+            #gpio-cells = <2>;
+            ngpios = <16>;              /* 2×74HC595 */
+        };
+    };
+};
+
+
+
         status = "disabled";
