@@ -3,4 +3,10 @@ if SHIELD_CHRUMMV2
 config ZMK_KEYBOARD_NAME
     default "chrummv2"
 
-endif
+config SPI
+    default y
+
+
+endif # SHIELD_CHRUMMV2
+
+

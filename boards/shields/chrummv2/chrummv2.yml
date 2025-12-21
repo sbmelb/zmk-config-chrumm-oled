@@ -9,4 +9,5 @@ requires: [nice_nano]
 features:
   - keys
   - encoder
+  - display
 
