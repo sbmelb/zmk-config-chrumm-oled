@@ -1,5 +1,5 @@
 
-
+/*
 &pinctrl {
     /delete-node/ spi0_default;
     /delete-node/ spi0_sleep;
@@ -27,3 +27,5 @@
 &nice_view_spi {
     cs-gpios = <&pro_micro 1 GPIO_ACTIVE_HIGH>; /* D1 = P0.06 - physically connected to a yellow wire */
 };
+
+*/
