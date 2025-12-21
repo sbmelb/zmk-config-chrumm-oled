@@ -34,8 +34,4 @@
 };
 
 
-&spi0 {
-    cs-gpios = <&pro_micro 1 GPIO_ACTIVE_HIGH>;
-    mosi-gpios = <&pro_micro 3 GPIO_ACTIVE_HIGH>;
-    sck-gpios = <&pro_micro 2 GPIO_ACTIVE_HIGH>;
-}
+
