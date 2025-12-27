@@ -5,6 +5,41 @@
     status = "okay";
 };
 
+/* FINAL override: MOSI/SCK swapped due to wiring error
+ *
+ * Physical wiring:
+ *   MOSI -> D3 (P0.20)
+ *   SCK  -> D2 (P0.17)
+ */
+
+&pinctrl {
+    /delete-node/ spi0_default;
+    /delete-node/ spi0_sleep;
+
+    spi0_default: spi0_default {
+        group1 {
+            psels =
+                <NRF_PSEL(SPIM_SCK,  0, 17)>,
+                <NRF_PSEL(SPIM_MOSI, 0, 20)>,
+                <NRF_PSEL(SPIM_MISO, 0, 25)>;
+        };
+    };
+
+    spi0_sleep: spi0_sleep {
+        group1 {
+            psels =
+                <NRF_PSEL(SPIM_SCK,  0, 17)>,
+                <NRF_PSEL(SPIM_MOSI, 0, 20)>,
+                <NRF_PSEL(SPIM_MISO, 0, 25)>;
+            low-power-enable;
+        };
+    };
+};
+
+/* Use known-good CS polarity */
+&nice_view_spi {
+    cs-gpios = <&pro_micro 1 GPIO_ACTIVE_HIGH>;
+};
 
 
 
