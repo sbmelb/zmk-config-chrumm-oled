@@ -6,8 +6,8 @@
  *   MOSI = P0.17 (D2)
  *
  * Your wiring:
- *   SCK  physically on D2 = P0.17
- *   MOSI physically on D3 = P0.20
+ *   SCK - blue wire - physically on D2 = P0.17
+ *   MOSI - brown wire - physically on D3 = P0.20
  */
 
 &pinctrl {
