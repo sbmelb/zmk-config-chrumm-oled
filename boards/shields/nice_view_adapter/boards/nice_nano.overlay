@@ -43,5 +43,5 @@
 
 /* Keep CS the same as your working sister board unless you *know* you wired it differently. */
 &nice_view_spi {
-    cs-gpios = <&pro_micro 1 GPIO_ACTIVE_LOW>;
+    cs-gpios = <&pro_micro 1 GPIO_ACTIVE_HIGH>;
 };
