@@ -12,10 +12,12 @@
  */
 
 
-
-
+/* nice_view MOSI/SCK swapped fix (D2 <-> D3) for hardware wiring mistake.
+ * Default: SCK=P0.20 (D3), MOSI=P0.17 (D2)
+ * Swapped: SCK=P0.17 (D2), MOSI=P0.20 (D3)
+ */
+ 
 &pinctrl {
-    /* Replace the pinctrl groups used by spi0 */
     /delete-node/ spi0_default;
     /delete-node/ spi0_sleep;
 
@@ -39,9 +41,7 @@
     };
 };
 
-/* nice_view_spi is a label created by the upstream nice_view_adapter overlay.
- * We keep CS the same; change only if you wired CS elsewhere or need polarity change.
- */
+/* Keep CS the same as your working sister board unless you *know* you wired it differently. */
 &nice_view_spi {
-    cs-gpios = <&pro_micro 1 GPIO_ACTIVE_HIGH>;
+    cs-gpios = <&pro_micro 1 GPIO_ACTIVE_LOW>;
 };
