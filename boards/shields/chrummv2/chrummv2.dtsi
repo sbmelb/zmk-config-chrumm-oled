@@ -31,7 +31,7 @@ chosen  {
       label = "KSCAN";
       diode-direction = "col2row";
 
-      row-gpios = <&gpio1 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>, 
+      row-gpios = <&gpio1 7gmjjjjj (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>, 
                   <&pro_micro 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>, 
                   <&pro_micro 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>, 
                   <&pro_micro 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>, 
@@ -45,11 +45,11 @@ chosen  {
                   <&shifter 5 (GPIO_ACTIVE_HIGH)>, 
                   <&shifter 6 (GPIO_ACTIVE_HIGH)>, 
                   <&shifter 7 (GPIO_ACTIVE_HIGH)>, 
-                  <&shifter 8 (GPIO_ACTIVE_HIGH)>, 
-                  <&shifter 9 (GPIO_ACTIVE_HIGH)>,
+                  <&shifter 9 (GPIO_ACTIVE_HIGH)>, 
                   <&shifter 10 (GPIO_ACTIVE_HIGH)>,
-                  <&shifter 11 (GPIO_ACTIVE_HIGH)>, 
-                  <&shifter 12 (GPIO_ACTIVE_HIGH)>;
+                  <&shifter 11 (GPIO_ACTIVE_HIGH)>,
+                  <&shifter 12 (GPIO_ACTIVE_HIGH)>, 
+                  <&shifter 13 (GPIO_ACTIVE_HIGH)>;
     };
 
 
