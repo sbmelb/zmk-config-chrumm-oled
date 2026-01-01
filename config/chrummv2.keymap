@@ -889,7 +889,28 @@
         //            , <&macro_release &mo 4>;
         //        label = "MO_4_ENUN";
         //   };
+
+    bt0_pc: bt0_pc {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&bt BT_SEL 0>, <&sl 0>;
     };
+
+    bt1_laptop: bt1_laptop {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&bt BT_SEL 1>, <&sl 0>;
+    };
+
+    bt2_ipad: bt2_ipad {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&bt BT_SEL 2>, <&sl iPad_layer>;
+    };
+};
+
+
+
 
     combos {
         compatible = "zmk,combos";
@@ -1154,11 +1175,11 @@
             // |       |      |      |      |      |      |       |       |      |      |       |       |       |
 
             bindings = <
-&bt BT_CLR   &bt BT_SEL 0 &sl 0  &bt BT_SEL 1 &sl 0  &bt BT_SEL 2 &sl iPad_layer  &bt BT_SEL 3  &bt BT_SEL 4  &out OUT_TOG  &trans        &trans  &trans  &trans  &trans  &bt BT_CLR_ALL
-&bootloader  &trans        &trans        &trans        &trans        &trans        &out OUT_BLE  &out OUT_USB  &trans  &trans  &trans  &trans  &trans
-&sys_reset   &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans
-&trans       &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans
-&soft_off    &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans
+&bt BT_CLR   &bt0_pc   &bt1_laptop  &bt2_ipad  &bt BT_SEL 3  &bt BT_SEL 4  &out OUT_TOG  &trans        &trans  &trans  &trans  &trans  &bt BT_CLR_ALL
+&bootloader  &trans    &trans       &trans     &trans        &trans        &out OUT_BLE  &out OUT_USB  &trans  &trans  &trans  &trans  &trans
+&sys_reset   &trans    &trans       &trans     &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans
+&trans       &trans    &trans       &trans     &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans
+&soft_off    &trans    &trans       &trans     &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans
             >;
         };
 
