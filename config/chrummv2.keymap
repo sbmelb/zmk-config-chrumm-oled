@@ -917,7 +917,7 @@
 
         chord_equals {
             bindings = <&kp EQUAL>;
-            key-positions = <63 62>;
+            key-positions = <62 63>;
             timeout-ms = <30>;
             layers = <0>;
         };
@@ -944,7 +944,7 @@
 
         chord_questionmark {
             bindings = <&kp QUESTION>;
-            key-positions = <7 6>;
+            key-positions = <6 7>;
             timeout-ms = <30>;
             layers = <0>;
         };
