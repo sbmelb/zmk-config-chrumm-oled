@@ -890,23 +890,24 @@
         //        label = "MO_4_ENUN";
         //   };
 
-    bt0_pc: bt0_pc {
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      bindings = <&bt BT_SEL 0>, <&sl 0>;
-    };
+bt0_pc: bt0_pc {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&bt BT_SEL 0>, <&sl 0>;
+};
 
-    bt1_laptop: bt1_laptop {
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      bindings = <&bt BT_SEL 1>, <&sl 0>;
-    };
+bt1_laptop: bt1_laptop {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&bt BT_SEL 1>, <&sl 0>;
+};
 
-    bt2_ipad: bt2_ipad {
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      bindings = <&bt BT_SEL 2>, <&sl 1>;
-    };
+bt2_ipad: bt2_ipad {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&bt BT_SEL 2>, <&sl 1>;  /* iPad_layer is layer 1 */
+};
+
 };
 
 
