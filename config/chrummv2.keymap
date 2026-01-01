@@ -905,7 +905,7 @@
     bt2_ipad: bt2_ipad {
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
-      bindings = <&bt BT_SEL 2>, <&sl iPad_layer>;
+      bindings = <&bt BT_SEL 2>, <&sl 1>;
     };
 };
 
@@ -1116,6 +1116,7 @@
         };
 
         iPad_layer {
+            display-name = "Ipad-Air";            
             bindings = <
                 /* example: paste key position */
                 &kp LG(V)   /* ⌘ V instead of Ctrl V */
