@@ -1243,9 +1243,5 @@
     };
 };
 
-/* Now that nice_view_spi exists (it was created by nice_view_adapter),
- * we can safely reference it.
- * Match your working sister keyboard first: ACTIVE_HIGH.
- */
 
 &nice_view_spi { cs-gpios = <&pro_micro 1 GPIO_ACTIVE_HIGH>; };
