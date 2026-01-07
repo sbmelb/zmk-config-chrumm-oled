@@ -1121,9 +1121,9 @@
             bindings = <
 &kp ESCAPE      &kp N1    &kp N2    &kp N3      &kp N4      &kp N5     &kp N6                               &kp N7      &kp N8      &kp N9      &kp N0               &kp DELETE      &kp BACKSPACE
 &kp TAB         &kp Q     &kp W     &kp F       &kp P       &kp B      &kp J                                &kp L       &kp U       &kp Y       &dt_dash_underscore  &dt_l_brackets  &dt_r_brackets
-&mo_2_enun      &kp A     &kp R     &kp S       &kp T       &kp G      &kp M                                &kp N       &kp E       &kp I       &kp O                &dt_quotes      &dt_semi_full_colon
+&mo_3_enun      &kp A     &kp R     &kp S       &kp T       &kp G      &kp M                                &kp N       &kp E       &kp I       &kp O                &dt_quotes      &dt_semi_full_colon
 &dt_shift_caps  &kp Z     &kp X     &kp C       &kp D       &kp V      &kp K                                &kp H       &kp COMMA   &kp DOT     &kp FSLH             &kp UP          &kp RIGHT_SHIFT
-&kp LCTRL       &kp PIPE  &kp LALT  &mo_6_enun  &mo_1_enun  &kp ENTER  &hold_space_shift RIGHT_SHIFT SPACE  &mo_6_enun  &mo_5_enun  &mo_4_enun  &kp LEFT             &kp DOWN        &kp RIGHT
+&kp LCTRL       &kp PIPE  &kp LALT  &mo_7_enun  &mo_2_enun  &kp ENTER  &hold_space_shift RIGHT_SHIFT SPACE  &mo_6_enun  &mo_5_enun  &mo_4_enun  &kp LEFT             &kp DOWN        &kp RIGHT
             >;
 
             sensor-bindings = <&rot_kp LEFT RIGHT>;
@@ -1243,9 +1243,9 @@
         group1 {
             psels =
                 <NRF_PSEL(SPIM_SCK,  0, 17)>,
-                /* SCK on P0.17 (D2) */
+                /* SCK on P0.17 (D2) */,
                 <NRF_PSEL(SPIM_MOSI, 0, 20)>,
-                /* MOSI on P0.20 (D3) */
+                /* MOSI on P0.20 (D3) */,
                 <NRF_PSEL(SPIM_MISO, 0, 25)>;
         };
     };
@@ -1261,6 +1261,5 @@
         };
     };
 };
-
 
 &nice_view_spi { cs-gpios = <&pro_micro 1 GPIO_ACTIVE_HIGH>; };
