@@ -1,11 +1,11 @@
 
 file_format: "1"
-id: chrummv2
-name: chrummv2
+id: chrummoled
+name: chrummoled
 type: shield
 url: 
 requires: [nice_nano]
-#exposes: [i2c_oled]
+exposes: [i2c_oled]
 features:
   - keys
   - encoder

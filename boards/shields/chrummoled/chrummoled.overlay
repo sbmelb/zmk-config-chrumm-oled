@@ -1,4 +1,4 @@
-#include "chrummv2.dtsi"
+#include "chrummoled.dtsi"
 
 
 &left_encoder {
