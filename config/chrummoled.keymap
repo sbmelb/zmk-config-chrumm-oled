@@ -1233,35 +1233,3 @@
     };
 };
 
-/* --- nice_view: swap MOSI/SCK due to wiring error (runs last via keymap overlay) --- */
-
-/*
-&pinctrl {
-    /delete-node/ spi0_default;
-    /delete-node/ spi0_sleep;
-
-    spi0_default: spi0_default {
-        group1 {
-            psels =
-                <NRF_PSEL(SPIM_SCK,  0, 17)>,
-                /* SCK on P0.17 (D2) */
-                <NRF_PSEL(SPIM_MOSI, 0, 20)>,
-                /* MOSI on P0.20 (D3) */
-                <NRF_PSEL(SPIM_MISO, 0, 25)>;
-        };
-    };
-
-    spi0_sleep: spi0_sleep {
-        group1 {
-            psels =
-                <NRF_PSEL(SPIM_SCK,  0, 17)>,
-                <NRF_PSEL(SPIM_MOSI, 0, 20)>,
-                <NRF_PSEL(SPIM_MISO, 0, 25)>;
-
-            low-power-enable;
-        };
-    };
-};
-
-&nice_view_spi { cs-gpios = <&pro_micro 1 GPIO_ACTIVE_HIGH>; };
-*/
