@@ -1235,6 +1235,7 @@
 
 /* --- nice_view: swap MOSI/SCK due to wiring error (runs last via keymap overlay) --- */
 
+/*
 &pinctrl {
     /delete-node/ spi0_default;
     /delete-node/ spi0_sleep;
@@ -1263,3 +1264,4 @@
 };
 
 &nice_view_spi { cs-gpios = <&pro_micro 1 GPIO_ACTIVE_HIGH>; };
+*/
