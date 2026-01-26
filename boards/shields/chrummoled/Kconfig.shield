@@ -1,2 +1,2 @@
-config SHIELD_CHRUMMOOLED
+config SHIELD_CHRUMMOLED
     def_bool $(shields_list_contains,chrummoled)

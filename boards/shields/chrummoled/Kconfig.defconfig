@@ -7,6 +7,6 @@ config SPI
     default y
 
 
-endif # SHIELD_CHRUMMOLED
+endif 
 
 
