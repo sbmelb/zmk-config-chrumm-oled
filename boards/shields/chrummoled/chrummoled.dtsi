@@ -31,7 +31,7 @@ chosen  {
       label = "KSCAN";
       diode-direction = "col2row";
 
-      row-gpios = <&gpio1 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+      row-gpios = <&gpio1 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
 
       col-gpios = <&pro_micro 18 (GPIO_ACTIVE_HIGH)>;
     };
