@@ -10,6 +10,8 @@
 ---
 include:
   - board: nice_nano
-    shield: chrummoled oled_adapter_pro_micro_128x64_sinowealth
+    shield: chrummoled oled_adapter_pro_micro_128x64_solomon
   - board: nice_nano
     shield: settings_reset    
+  - board: nice_nano
+    shield: settings_reset        
