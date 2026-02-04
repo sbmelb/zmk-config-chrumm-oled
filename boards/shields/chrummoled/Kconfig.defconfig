@@ -3,9 +3,6 @@ if SHIELD_CHRUMMOLED
 config ZMK_KEYBOARD_NAME
     default "Chrummoled"
 
-config SPI
-    default y
-
 
 endif 
 
