@@ -1,9 +1,7 @@
 #include "chrummoled.dtsi"
 
 
-&left_encoder {
-    status = "okay";
-};
+
 
 
 

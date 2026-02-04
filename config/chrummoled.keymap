@@ -10,29 +10,5 @@
 #include <dt-bindings/zmk/outputs.h>
 
 
-    keymap {
-        compatible = "zmk,keymap";
 
-        colemak_layer {
-            display-name = "Colemak";
-
-            // --------------------------------------------------------------------------------------------------
-            // |  ESC  |  1   |  2   |  3   |  4   |  5   |   6   |  7    |  8   |  9   |   0   | MINUS |  DEL |
-            // |  TAB  |  Q   |  W   |  F   |  P   |  B   |   J   |  L    |  U   |  Y   |   ;   | LBKT  |  RBKT |
-            // |  MO 2 |  A   |  R   |  S   |  T   |  G   |   M   |  N    |  E   |  I   |   O   |  '    |  NUBS |
-            // |  TD 0 |  Z   |  X   |  C   |  D   |  V   |   K   |  H    |  ,   |  .   |   /   |  UP   |  RSFT |
-            // |  LCTR | EC11 | LALT | MO 1 | SPACE| ENTER| ENTER | SPACE | BSPC | MO 3 | LEFT  | DOWN  |  RIGHT|
-            //            ** note - EC11 is the button in the ecll encoder
-
-            bindings = <
-&kp ESCAPE      &kp N1    &kp N2    &kp N3      &kp N4      &kp N5     &kp N6                               &kp N7      &kp N8      &kp N9      &kp N0               &kp DELETE      &kp BACKSPACE
-&kp TAB         &kp Q     &kp W     &kp F       &kp P       &kp B      &kp J                                &kp L       &kp U       &kp Y       &dt_dash_underscore  &dt_l_brackets  &dt_r_brackets
-&mo_3_enun      &kp A     &kp R     &kp S       &kp T       &kp G      &kp M                                &kp N       &kp E       &kp I       &kp O                &dt_quotes      &dt_semi_full_colon
-&dt_shift_caps  &kp Z     &kp X     &kp C       &kp D       &kp V      &kp K                                &kp H       &kp COMMA   &kp DOT     &kp FSLH             &kp UP          &kp RIGHT_SHIFT
-&kp LCTRL       &kp PIPE  &kp LALT  &mo_7_enun  &mo_2_enun  &kp ENTER  &hold_space_shift RIGHT_SHIFT SPACE  &mo_6_enun  &mo_5_enun  &mo_4_enun  &kp LEFT             &kp DOWN        &kp RIGHT
-            >;
-
-            sensor-bindings = <&rot_kp LEFT RIGHT>;
-            label = "colemak_layer";
-        };
 

@@ -7,7 +7,6 @@ url:
 requires: [nice_nano]
 exposes: [i2c_oled]
 features:
-  - keys
-  - encoder
+
   - display
 
