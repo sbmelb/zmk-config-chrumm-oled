@@ -3,15 +3,19 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: mctechnology17
-      url-base: https://github.com/mctechnology17
+    - name: sbmelb
+      url-base: https://github.com/sbmelb
+
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
+
     - name: zmk-oled-adapter
-      remote: mctechnology17
+      remote: sbmelb
       revision: main
+      path: modules/zmk-oled-adapter
+
   self:
     path: config
